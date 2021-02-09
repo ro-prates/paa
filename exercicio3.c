@@ -94,6 +94,5 @@ int main(){
             printf("%d ",A[i]); //exibe apenas os candidatos que foram indicados
         }
     }
-
     return 0;
 }

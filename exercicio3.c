@@ -3,17 +3,15 @@
 #define MAX 100000
  
 int main(){
-    int numero, j=0, i, controle=1;
-    int cont=0 ,cont2=0 ,A[MAX], B[MAX];
-    int *contador;
+    int numero, i, controle=1, A[MAX], B[MAX],*contador;
  
     scanf("%d",&numero); //quantidade de pessoas
     contador = (int*)calloc(numero,sizeof(int));
 
     for(i=0; i<numero; i++){
-        scanf("%d", &A[i]);
-        scanf("%d", &B[i]);
-        contador[B[i]-1] = contador[B[i]-1] + 1;
+        scanf("%d", &A[i]); //pessoa que convida
+        scanf("%d", &B[i]); //pessoa que foi convidada
+        contador[B[i]-1] = contador[B[i]-1] + 1; //controle de pessoas que foram indicadas
     }
  
     while(controle==1){
@@ -30,9 +28,10 @@ int main(){
     }
  
     printf("\n");
-    for(i=0; i<numero; i++){
-        if(contador[i]!=-1)
-            // printf("%d ",A[i]); //exibe apenas os candidatos que foram indicados
+    for(i=0; i<numero; i++){        
+        if(contador[i]!=-1){
+            printf("%d ",A[i]); //exibe apenas os candidatos que foram indicados
+        }
     }
 
     return 0;

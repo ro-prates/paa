@@ -4,10 +4,13 @@ int main(){
     int valores[15] = {1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384};
     int i, n;
     int v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12;
+<<<<<<< HEAD
 	int v13, v14, v15, v16, v17, v18, v19, v20, v21, v22, v23;
 	int v24, v25, v26, v27, v28, v29, v30, v31, v32, v33, v34;
 	int v35, v36, v37, v38, v39, v40, v41, v42, v43, v44, v45, v46, v47;
 	int v48, v49, v50, v51, v52, v53, v54, v55, v56, v57, v58, v59, v60, v61, v62; 
+=======
+>>>>>>> e347e7d15e4d667a1777a34fe8613b384712916e
 
     scanf("%d", &n);
 
@@ -15,7 +18,10 @@ int main(){
     for(i=0; i<15; i++){
         if(n == valores[i]){
             printf("1");
+<<<<<<< HEAD
 			return 0;
+=======
+>>>>>>> e347e7d15e4d667a1777a34fe8613b384712916e
         }
     }
 
@@ -32,7 +38,10 @@ int main(){
     for(i=0; i<15; i++){
         if(v1 == valores[i] || v2 == valores[i]){
             printf("2");
+<<<<<<< HEAD
 			return 0;
+=======
+>>>>>>> e347e7d15e4d667a1777a34fe8613b384712916e
         }
     }
 
@@ -58,6 +67,7 @@ int main(){
     for(i=0; i<15; i++){
         if(v3 == valores[i] || v4 == valores[i] || v5 == valores[i] || v6 == valores[i]){
             printf("3");
+<<<<<<< HEAD
 			return 0;
         }
     }
@@ -350,5 +360,10 @@ int main(){
     }
 
 	printf("7");
+=======
+        }
+    }
+
+>>>>>>> e347e7d15e4d667a1777a34fe8613b384712916e
     return 0;
 }
